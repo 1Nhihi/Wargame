@@ -39,3 +39,6 @@ for i in range(0x12):
 kết hợp với format của dreamhack nữa là có được flag rồi nè:
 >🚩 flag là: "DH{Comp4re_the_arr4y}" 
 
+# Simple Crack Me
+`DH{322376503}`
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/5de58756-a7aa-4246-bc83-a785b182bd39)
