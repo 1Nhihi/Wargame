@@ -30,3 +30,8 @@ if s.check() :
 
 else:
     print("No solution found.")
+
+
+# Solution: [110, 103, 104, 98, 99, 106, 102, 100, 101, 105]
+# your login : nghbc
+# your password : jfdei
