@@ -42,3 +42,7 @@ kết hợp với format của dreamhack nữa là có được flag rồi nè:
 # Simple Crack Me
 `DH{322376503}`
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/5de58756-a7aa-4246-bc83-a785b182bd39)
+
+
+# ProtectionSystem II
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/1b343e66-e18a-4c46-8559-2f6360344fee)
