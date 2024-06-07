@@ -23,6 +23,8 @@ decoded_bytes = base64.b64decode(a)
 decoded_string = decoded_bytes.decode('utf-8')
 
 print(decoded_string)
-
-
+# RmxhZ3tIYTRoNGFoNDRfZnVubnlfajBrM19Zb3VfZ090X20zIX0=
+# Flag{Ha4h4ah44_funny_j0k3_You_gOt_m3!} 
 ```
+
+> 🚩:` Flag{Ha4h4ah44_funny_j0k3_You_gOt_m3!} `
