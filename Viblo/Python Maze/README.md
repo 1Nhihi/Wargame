@@ -1,3 +1,8 @@
+# Python Maze
+Chall: [Python Maze](https://ctf.viblo.asia/puzzles/python-maze-w2voarkmm8p)
+
+
+check thì pyc này là 2.7 nên dùng pycdc để convert lại python
 `run: pycdc.exe chall.pyc`
 ```py
 # Source Generated with Decompyle++
