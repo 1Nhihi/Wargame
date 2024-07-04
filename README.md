@@ -50,3 +50,6 @@ kết hợp với format của dreamhack nữa là có được flag rồi nè:
 
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/0b933f4d-b63a-43a4-b782-7226bdc8d0b8)
 
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/6e826a77-353e-4bb3-a059-a18b6ca0ab40)
+
+
