@@ -46,3 +46,7 @@ kết hợp với format của dreamhack nữa là có được flag rồi nè:
 
 # ProtectionSystem II
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/1b343e66-e18a-4c46-8559-2f6360344fee)
+
+
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/0b933f4d-b63a-43a4-b782-7226bdc8d0b8)
+
