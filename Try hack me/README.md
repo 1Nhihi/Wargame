@@ -1,10 +1,8 @@
 #  [Try hack me](https://tryhackme.com/r/room/reverselfiles)
 ## Crackme1
 `
-./crackme1 
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/99bb359a-5cee-44a9-815a-abbe4530e898)
 
-flag{not_that_kind_of_elf}
-`
 > 🚩: `flag{not_that_kind_of_elf}`
 
 ## Crackme2
