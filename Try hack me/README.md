@@ -15,7 +15,7 @@ biết được password cần tìm là `super_secret_password`
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/0596b36b-3edc-46b1-ac84-ce920eac4eb9)
 
 > 🚩: super secret password: `super_secret_password`
-
+> 
 > 🚩: flag: `flag{if_i_submit_this_flag_then_i_will_get_points}`
 
 
