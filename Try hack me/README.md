@@ -1,4 +1,4 @@
-![image](https://github.com/1Nhihi/Wargame/assets/127366803/d7f5c18a-2f75-43e9-8462-007155d5f8b7)![image](https://github.com/1Nhihi/Wargame/assets/127366803/74c0c54c-1c4e-424b-910c-09320d28fb38)#  [Try hack me](https://tryhackme.com/r/room/reverselfiles)
+#  [Try hack me](https://tryhackme.com/r/room/reverselfiles)
 ## Crackme1
 `
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/99bb359a-5cee-44a9-815a-abbe4530e898)
