@@ -39,7 +39,7 @@ Check IDA:
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/3012ff34-6ea1-4e8d-9179-382ab0424167)
 
 input được so sánh với `OfdlDSA|3tXb32~X3tX@sX`4tXtz`
->🚩input: `OfdlDSA|3tXb32~X3tX@sX`4tXtz` 
+>🚩input: ```OfdlDSA|3tXb32~X3tX@sX`4tXtz```
 ## Crackme6
 Check IDA thì thấy từng ký tự của input được so sánh với ký tự có sẵn
 ![image](https://github.com/1Nhihi/Wargame/assets/127366803/79756241-0ae4-4576-bf41-5ca8fc43f47a)
