@@ -13,10 +13,12 @@ và sử dụng [tool ](https://hashes.com/en/decrypt/hash) để tim đoạn b�
 
 ## [Pin](https://ctflearn.com/challenge/379)
 Check IDA biết được hàm check `Masukan PIN` là `cek`
-![image](https://github.com/1Nhihi/Wargame/assets/127366803/4647b5bd-a093-4c7c-b53c-1f8961fe89ff)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/a0a10af7-5655-41a8-a252-fbc7d14de4d3)
+
 
 nhảy vào hàm `cek` thì biết hàm check `Masukan Pin ` với `333333`
-![image](https://hackmd.io/_uploads/ByEX_-aw0.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/e3b21aec-4e2c-4d67-a1ff-ac42c7a5be89)
+
 > 🚩: `333333`
 
 
@@ -24,7 +26,8 @@ nhảy vào hàm `cek` thì biết hàm check `Masukan Pin ` với `333333`
 
 khi chạy file thì chương trình bảo nhập vào password và out là trả về "Good job dude !!!" hay  "Wrong password" 
 vì thế nên nhảy vào ida để check 
-![image](https://hackmd.io/_uploads/rJrmyMTwA.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/e1219aa6-6ca4-408f-aaa2-f27496338d6e)
+
 
 nhìn sơ qua thì tìm được password đúng thì `stat`  phải = 1  nhìn lên tại `0x00055555540081C` giá trị của `input == msg`
 và giá trị của `msg` lại được khởi tạo tại `loc_55555540077A` vì thế nên đặt 1 BP sao khi khởi tạo xong `msg` và debug vì biết được giá trị của `msg` là `'AbCTF{r3vers1ng_dud3}'`
@@ -34,12 +37,14 @@ và giá trị của `msg` lại được khởi tạo tại `loc_55555540077A` 
 
 ## [Reykjavik](https://ctflearn.com/challenge/990)
 chạy thử chương trình 
-![image](https://hackmd.io/_uploads/ryHL5bavC.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/b049abc9-96e3-43cc-adec-4a2aa7c3ec82)
+
 
 vậy nên ném vào IDA và debug với một para
 
-thì thấy nó so sành từng ký tự của para và 1 ký tự có sẵn thế nên đặt 1 BP tại cmp và xem chuỗi đó luôn nè
-![image](https://hackmd.io/_uploads/BkgysW6PC.png)
+thì thấy nó so sánh từng ký tự của para và 1 ký tự có sẵn thế nên đặt 1 BP tại cmp và xem chuỗi đó luôn nè
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/dfa3b538-ff06-4a10-9ac4-7c243b99da04)
+
  >🚩: `CTFlearn{Eye_L0ve_Iceland_}`
 
 
@@ -52,7 +57,8 @@ flag đúng khi r12 = 0 <- tại `00005555555551B4 add     r12d, edx` edx phải
 - `sil` là flag nhập vào 
 - `[rbp+rax+0]` là giá trị có thể check bằng cách đặt BP 
 - cộng với điều kiện chuỗi nhập vào có len = 0x1E (ô màu trắng)
-![image](https://hackmd.io/_uploads/B1P0dM6v0.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/61c8bf27-affd-4385-bbb6-1db39efdec7a)
+
 
 
 
