@@ -2,16 +2,19 @@
 ## [Basic Android RE 1 ](https://ctflearn.com/challenge/962)
 
 Check apk với jadx 
-![image](https://hackmd.io/_uploads/S1erH-avA.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/346fb8a6-1771-49e8-8459-3b4c12924ebc)
+
 
 và sử dụng [tool ](https://hashes.com/en/decrypt/hash) để tim đoạn bị mã hóa md5 
-![image](https://hackmd.io/_uploads/HJ80HZ6P0.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/c9c8d1e4-a542-4a56-b7a5-2e85a2b2f6d8)
+
 
 > 🚩flag là: `CTFlearn{Spring2019_is_not_secure!}`
 
 ## [Pin](https://ctflearn.com/challenge/379)
 Check IDA biết được hàm check `Masukan PIN` là `cek`
-![image](https://hackmd.io/_uploads/B1SiPb6vC.png)
+![image](https://github.com/1Nhihi/Wargame/assets/127366803/4647b5bd-a093-4c7c-b53c-1f8961fe89ff)
+
 nhảy vào hàm `cek` thì biết hàm check `Masukan Pin ` với `333333`
 ![image](https://hackmd.io/_uploads/ByEX_-aw0.png)
 > 🚩: `333333`
