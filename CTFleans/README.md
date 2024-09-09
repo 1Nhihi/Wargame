@@ -92,3 +92,72 @@ nhập nó vào chương trình là lấy flag thôi 😁
 
 
 
+## [Riga ](https://ctflearn.com/challenge/996) 
+
+tương tự những bài trên chương trình bảo nhập vào một parameter là flag và kiểm tra xem flag mình nhập vào đã đúng chưa
+
+![image](https://github.com/user-attachments/assets/633d65d8-cc2a-4836-b861-acc9ab213bd4)
+
+
+
+nhập đại một chuỗi làm param và chạy chương trình thì biết được hàm chương trình xor các ký tự của chuỗi vừa nhập với 0xDE và nhảy vào hàm `_Z13BlackRyeBreadv` trong hàm này có 1 antidebug ta pass qua nó bằng cách thay đổi `ZF` khi đó giá trị của `beerEmbassy == 2`  vì vậy nên khi xuống dưới nó nhảy vào hàm `_Z10HerbalTea2Pc`
+ để flag nhập vào đúng thì hàm vừa rồi phải return về 1 nhảy vào hàm    `_Z10HerbalTea2Pc` kiểm tra
+![image](https://github.com/user-attachments/assets/1979fe24-482d-434d-a7a4-d99db0f37d47)
+
+
+mới vào chương trình gặp thêm 1 antidebug `_gettimeofday` pass qua nó thì chương trình xor các ký tự ngược lại với 0xDE để trả về chuỗi ban đầu sau đố tính tính với mỗi ký tự và đem so sánh với mảng `pickles0` để print ra  `aCongratulation` hay `aSorryYouDidNot`
+
+đề bài sau khi viết lại:
+```py
+
+inp = input('flag: ')
+pickles2 =[0x9d, 0xac, 0x92, 0xeb, 0xb3, 0xbf, 0xed, 0xe9, 0xe4, 0x97, 0xb9, 0x94, 0xe8, 0xe1, 0xb3, 0xb9, 0x94, 0xbf, 0xe3, 0xe1, 0xb7, 0xbf, 0xff, 0xfa]
+
+result = 1
+
+if len(inp) != 24:
+    print('a')
+    result = 0
+
+inp = [ord(i) for i in inp]
+for i in range(len(inp)):
+    if (inp[i] + 19) > 0x7e:
+        if (inp[i] - 76) ^ 0xCB != pickles2[i]:
+            print('b')
+            result = 0
+    elif (inp[i] + 19) < 0x20:
+        if ((inp[i] + 114)^ 0xCB ) != pickles2[i]:
+            result = 0
+            print('c')
+    else:
+        if ((inp[i] + 19)^ 0xCB ) != pickles2[i]:
+            result = 0
+            print(i)
+
+
+if result:
+    print("Congratulations!! You found the flag")
+else:
+    print( "Sorry, you did not find the flag ")
+
+print(''.join(chr(i) for i in inp))
+
+```
+
+script của bài là:
+```py
+pickles2 =[0x9d, 0xac, 0x92, 0xeb, 0xb3, 0xbf, 0xed, 0xe9, 0xe4, 0x97, 0xb9, 0x94, 0xe8, 0xe1, 0xb3, 0xb9, 0x94, 0xbf, 0xe3, 0xe1, 0xb7, 0xbf, 0xff, 0xfa]
+
+for i in pickles2:
+    x = ((i ^ 0xCB) - 19 )
+    if x <  0x20:
+        x += 114
+        x -= 19
+    print(chr(x), end = '')
+
+#CTFlearn{I_Love_Latvia!}
+```
+>🚩: `CTFlearn{I_Love_Latvia!} `
+
+
+
