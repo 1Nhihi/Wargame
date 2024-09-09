@@ -159,5 +159,49 @@ for i in pickles2:
 ```
 >🚩: `CTFlearn{I_Love_Latvia!} `
 
+## [Reverse Me](https://ctflearn.com/challenge/989) 
+
+chạy chương trình thì nó bảo nhập vào flag và in ra `Incorrect` hoặc `Correct` nhảy vào IDA  kiểm tra thì biết được đề bài viết ngắn lại như sau:
+```py
+inp = input('enter the flag: ')
+v5 = [1,3,3,7,222,173,190, 239,]
+inp = [ord(i) for i in inp]
+for i in range(len(inp)):
+    inp[i] ^= v5[i % 8]
+
+
+b = []
+for i in range(1, len(inp), 2):
+    b.append(inp[i])
+    b.append(inp[i-1])
+
+target = [0x57, 0x42, 0x4b, 0x45, 0xcc, 0xbb, 0x81, 0xcc, 0x71, 0x7a, 0x71, 0x66, 0xdf, 0xbb, 0x86, 0xcd, 0x64, 0x6f, 0x6e, 0x5c, 0xf2, 0xad, 0x9a, 0xd8, 0x7e, 0x6f]
+if b == target:
+    print('Correct')
+else:
+    print('Incorrect')
+
+```
+
+từ đó viết được sờ cờ ríp
+
+```py
+
+target = [0x57, 0x42, 0x4b, 0x45, 0xcc, 0xbb, 0x81, 0xcc, 0x71, 0x7a, 0x71, 0x66, 0xdf, 0xbb, 0x86, 0xcd, 0x64, 0x6f, 0x6e, 0x5c, 0xf2, 0xad, 0x9a, 0xd8, 0x7e, 0x6f]
+
+b = []
+for i in range(1, len(target), 2):
+    b.append(target[i])
+    b.append(target[i-1])
+
+v5 = [1,3,3,7,222,173,190, 239,]
+# a = [ord(i) for i in a]
+for i in range(len(b)):
+    b[i] ^= v5[i % 8]
+print(''.join(chr(i) for i in b))
+
+# CTFLearn{reversing_is_fun}
+```
+>🚩:`CTFLearn{reversing_is_fun}`
 
 
