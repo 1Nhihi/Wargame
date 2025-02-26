@@ -204,4 +204,37 @@ print(''.join(chr(i) for i in b))
 ```
 >🚩:`CTFLearn{reversing_is_fun}`
 
+## [Ramada ](https://ctflearn.com/challenge/1009) 
 
+Ném file vào IDA, đoạn đầu thì nó cũng kiếm tra format của file CTFlearn{...} hay không thôi, sau khi kiểm tra format thì kiểm tra độ dài nó check sem độ dài của chuỗi mình nhập có `= 0x1f` không và xuống dưới  hàm `_Z9CheckFlagPKc`  hàm này là hàm chek các kí tự mình nhập vào có đúng không:
+![alt text](img//image-1.png)
+func `_Z9CheckFlagPKc`:
+![alt text](img//image-2.png)
+nhìn chung thì nó  mũ 3 các ký tự mình nhập vào và so sánh giá trị đó với data có sẵn  vậy nên đặt một BreakPoint tại `cmp` và sử dụng python để in ra chuỗi đề bài muốn mình nhập
+```py
+for i in range(21):
+    print(chr(round((ida_bytes.get_dword(0x0000555555558040+4*i)) ** (1/3))),end = "")
+```
+![alt text](img//image-3.png)
+
+
+>🚩flag là: `CTFlearn{+Lip1zzaner_Stalli0ns}`
+
+
+## [Raspberry ](https://ctflearn.com/challenge/1080)
+Bài này thì chương trình so sánh các ký tự nhập vào và sử dụng các phép toán (cộng, trừ, xor,..) rồi so sánh với giá trị cho trước (có thể dùng z3) 
+
+
+
+>🚩flag là: `CTFlearn{+Fruit123}`
+
+## [Rangoon](https://ctflearn.com/challenge/994) 
+
+Ném file vào IDA, đoạn đầu thì nó cũng kiếm tra format của file CTFlearn{...} hay không thôi, sau khi kiểm tra format rồi thì đoạn này nhìn nó dài vậy thôi chớ công dụng của nó cũng chỉ để kiểm tra độ dài chuỗi nhập vào có = 0x1c k thôi 
+![alt text](img//image.png)
+
+và nếu chiều dai đúng rồi thì đoạn trên cũng đồng thời khởi tạo các giá trị của `s2` và đem so sánh với `s1` chuỗi mình nhập vào 
+
+
+
+>🚩flag là: `CTFlearn{...}`
